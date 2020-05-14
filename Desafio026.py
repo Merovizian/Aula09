@@ -1,0 +1,6 @@
+print(f"{'*'*10}Desafio 026 - Dissecando uma frase{'*'*10}")
+frase = input("Digite uma frase: ").strip()
+letra = input("Digite a letra que quer mostrar: ")
+print(f"A letra '{letra}' apareceu {frase.count(letra)} vezes.")
+print(f"A letra '{letra}' aparece pela 1ª vez na posição: {frase.find(letra)}")
+print(f"A letra '{letra}' apareceu pela ultima vez na posição: {len(frase)-(frase[::-1].find(letra))-1}")
